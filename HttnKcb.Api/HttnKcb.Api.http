@@ -1,0 +1,41 @@
+@host = https://localhost:7147
+
+### Departments
+GET {{host}}/api/departments
+
+### Create Department
+POST {{host}}/api/departments
+Content-Type: application/json
+
+{
+  "name": "Khoa Tim Mạch",
+  "description": "Khám tim mạch",
+  "isActive": true
+}
+
+### Doctors
+GET {{host}}/api/doctors
+
+### Create Doctor
+POST {{host}}/api/doctors
+Content-Type: application/json
+
+{
+  "fullName": "BS. Demo",
+  "departmentId": 1
+}
+
+### Users
+GET {{host}}/api/users
+
+### Create User
+POST {{host}}/api/users
+Content-Type: application/json
+
+{
+  "username": "demo_user",
+  "fullName": "Người dùng Demo",
+  "email": "demo@example.com",
+  "role": 2,
+  "isActive": true
+}

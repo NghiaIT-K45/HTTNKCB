@@ -1,0 +1,477 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\apiclients\\departmentapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\apiclients\\departmentapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DEB467-30E8-4FAF-9D79-097D7806FA03}|HttnKcb.Tests\\HttnKcb.Tests.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.tests\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DEB467-30E8-4FAF-9D79-097D7806FA03}|HttnKcb.Tests\\HttnKcb.Tests.csproj|solutionrelative:httnkcb.tests\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\httnkcb.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\httnkcb.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\data\\hospitaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\data\\hospitaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\departments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\departments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\viewmodels\\departmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\viewmodels\\departmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.web\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E776D-F448-42B9-BE0E-5AE3B045AB31}|HttnKcb.Web\\HttnKcb.Web.csproj|solutionrelative:httnkcb.web\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|e:\\.netproject\\httn_kcb_sprint1_code\\httnkcb.api\\httnkcb.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FE2113EC-76D8-46BA-ABD6-B88C0D5F356E}|HttnKcb.Api\\HttnKcb.Api.csproj|solutionrelative:httnkcb.api\\httnkcb.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:41:55.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Departments\\Create.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T22:55:29.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T16:13:19.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Departments\\Delete.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Delete.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Departments\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T22:56:00.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HospitalDbContext.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Data\\HospitalDbContext.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Data\\HospitalDbContext.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Data\\HospitalDbContext.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Data\\HospitalDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:19:28.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HttnKcb.Api.csproj",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\HttnKcb.Api.csproj",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\HttnKcb.Api.csproj",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\HttnKcb.Api.csproj",
+              "RelativeToolTip": "HttnKcb.Api\\HttnKcb.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T10:35:51.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DepartmentTests.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Tests\\DepartmentTests.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Tests\\DepartmentTests.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Tests\\DepartmentTests.cs",
+              "RelativeToolTip": "HttnKcb.Tests\\DepartmentTests.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:20:15.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentApiClient.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\ApiClients\\DepartmentApiClient.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\ApiClients\\DepartmentApiClient.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\ApiClients\\DepartmentApiClient.cs",
+              "RelativeToolTip": "HttnKcb.Web\\ApiClients\\DepartmentApiClient.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:51:24.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\appsettings.json",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\appsettings.json",
+              "RelativeToolTip": "HttnKcb.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T11:25:54.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HttnKcb.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:57:17.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Department.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Models\\Department.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\Department.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:19:39.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\appsettings.json",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\appsettings.json",
+              "RelativeToolTip": "HttnKcb.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T10:20:43.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "HttnKcb.Web\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:54:19.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "HttnKcb.Web\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:58:55.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Program.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Program.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Program.cs",
+              "RelativeToolTip": "HttnKcb.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T16:06:14.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Program.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Program.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Program.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:47:10.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Departments\\Index.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Departments\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T22:54:56.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-18T11:28:10Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-18T11:28:11.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\Views\\Departments\\Edit.cshtml",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\Views\\Departments\\Edit.cshtml",
+              "RelativeToolTip": "HttnKcb.Web\\Views\\Departments\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T22:55:46.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentViewModel.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\ViewModels\\DepartmentViewModel.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Web\\ViewModels\\DepartmentViewModel.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Web\\ViewModels\\DepartmentViewModel.cs",
+              "RelativeToolTip": "HttnKcb.Web\\ViewModels\\DepartmentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:51:04.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Models\\Doctor.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\Doctor.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:49:19.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Models\\AppUser.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Models\\AppUser.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:19:36.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Dtos.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\DTOs\\Dtos.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\DTOs\\Dtos.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\DTOs\\Dtos.cs",
+              "RelativeToolTip": "HttnKcb.Api\\DTOs\\Dtos.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:19:21.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HttnKcb.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T10:31:07.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20251111105918_InitialCreate.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs",
+              "RelativeToolTip": "HttnKcb.Api\\Migrations\\20251111105918_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:59:18.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HttnKcb.Api.http",
+              "DocumentMoniker": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\HttnKcb.Api.http",
+              "RelativeDocumentMoniker": "HttnKcb.Api\\HttnKcb.Api.http",
+              "ToolTip": "E:\\.NetProject\\HTTN_KCB_Sprint1_Code\\HttnKcb.Api\\HttnKcb.Api.http",
+              "RelativeToolTip": "HttnKcb.Api\\HttnKcb.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-11T10:29:34.882Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

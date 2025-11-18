@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "HttnKcb.Api\\HttnKcb.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "HttnKcb.Web\\HttnKcb.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

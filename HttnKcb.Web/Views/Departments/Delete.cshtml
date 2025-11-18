@@ -1,0 +1,18 @@
+@model HttnKcb.Web.ViewModels.DepartmentViewModel
+
+@{
+    ViewData["Title"] = "Delete Department";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    Are you sure you want to delete department
+    <strong>@Model.Name (@Model.Code)</strong>?
+</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
