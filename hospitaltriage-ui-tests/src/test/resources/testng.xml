@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="HospitalTriage UI Suite" verbose="1" parallel="false">
+
+  <listeners>
+    <listener class-name="com.hospitaltriage.listeners.UiTestListener"/>
+    <!-- If you don't use Allure, you can remove this line -->
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+
+  <test name="UI Tests">
+    <classes>
+      <!-- Auth / session -->
+      <class name="com.hospitaltriage.tests.AuthAndRbacTests"/>
+      <class name="com.hospitaltriage.tests.AuthNegativeTests"/>
+      <class name="com.hospitaltriage.tests.LoginNegativeMatrixTests"/>
+      <class name="com.hospitaltriage.tests.SessionAndLogoutTests"/>
+      <class name="com.hospitaltriage.tests.AccessControlUrlMatrixTests"/>
+      <class name="com.hospitaltriage.tests.CreatePagesAccessControlTests"/>
+
+      <!-- Catalog: Departments -->
+      <class name="com.hospitaltriage.tests.DepartmentCrudTests"/>
+      <class name="com.hospitaltriage.tests.DepartmentCreateExtendedTests"/>
+      <class name="com.hospitaltriage.tests.DepartmentAdditionalTests"/>
+      <class name="com.hospitaltriage.tests.DepartmentNegativeMatrixTests"/>
+
+      <!-- Catalog: Doctors -->
+      <class name="com.hospitaltriage.tests.DoctorCrudTests"/>
+      <class name="com.hospitaltriage.tests.DoctorCreateExtendedTests"/>
+      <class name="com.hospitaltriage.tests.DoctorAdditionalTests"/>
+      <class name="com.hospitaltriage.tests.DoctorNegativeMatrixTests"/>
+
+      <!-- Intake / Triage -->
+      <class name="com.hospitaltriage.tests.IntakeAndTriageE2ETests"/>
+      <class name="com.hospitaltriage.tests.IntakeCreateExtendedTests"/>
+      <class name="com.hospitaltriage.tests.IntakeAdditionalTests"/>
+      <class name="com.hospitaltriage.tests.IntakeNegativeMatrixTests"/>
+      <class name="com.hospitaltriage.tests.TriageAdditionalTests"/>
+      <class name="com.hospitaltriage.tests.TriageNegativeTests"/>
+
+      <!-- Dashboard / Reports -->
+      <class name="com.hospitaltriage.tests.DashboardAndReportsTests"/>
+      <class name="com.hospitaltriage.tests.ReportsNegativeTests"/>
+    </classes>
+  </test>
+
+</suite>

@@ -1,0 +1,129 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.hospitaltriage</groupId>
+  <artifactId>hospitaltriage-ui-tests</artifactId>
+  <version>1.0.0</version>
+  <name>HospitalTriage UI Tests (Selenium + TestNG)</name>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- Dependencies -->
+    <selenium.version>4.39.0</selenium.version>
+    <testng.version>7.11.0</testng.version>
+    <webdrivermanager.version>6.3.3</webdrivermanager.version>
+    <allure.version>2.32.0</allure.version>
+
+    <!-- Plugins -->
+    <surefire.version>3.5.4</surefire.version>
+    <jacoco.version>0.8.14</jacoco.version>
+
+    <!-- Defaults (override via -DbaseUrl=... -Dbrowser=... -Dheadless=true) -->
+    <baseUrl>https://localhost:64274</baseUrl>
+    <browser>chrome</browser>
+    <headless>false</headless>
+  </properties>
+
+  <dependencies>
+    <!-- Selenium WebDriver -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+    </dependency>
+
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Driver manager (Chromedriver/Geckodriver/...) -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Optional: nicer HTML report (Allure) -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-testng</artifactId>
+      <version>${allure.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Logging (simple) -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.16</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Utilities -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.17.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.version}</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+
+          <!-- Put Maven Surefire reports under target/test-output so you can open them easily -->
+          <reportsDirectory>${project.build.directory}/test-output/surefire-reports</reportsDirectory>
+          <!-- Also redirect System.out/System.err of tests into the report files -->
+          <redirectTestOutputToFile>true</redirectTestOutputToFile>
+
+          <!-- pass settings to tests -->
+          <systemPropertyVariables>
+            <baseUrl>${baseUrl}</baseUrl>
+            <browser>${browser}</browser>
+            <headless>${headless}</headless>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+
+      <!-- Java code coverage of the test project itself (NOT coverage for the .NET server) -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
