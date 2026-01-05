@@ -1,0 +1,73 @@
+@model HospitalTriage.Web.ViewModels.Intake.PatientIntakeVm
+@using HospitalTriage.Domain.Enums
+@{
+    ViewData["Title"] = "Tiếp nhận bệnh nhân";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h2 class="mb-1">Tiếp nhận bệnh nhân</h2>
+        <div class="text-muted small">Nhập thông tin bệnh nhân để tạo/ cập nhật hồ sơ và tạo lượt khám</div>
+    </div>
+    <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Quay lại</a>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-body p-4">
+        <form asp-action="Register" method="post" class="row g-3">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="col-md-6">
+                <label asp-for="FullName" class="form-label">Họ tên</label>
+                <input asp-for="FullName" class="form-control" placeholder="VD: Nguyễn Văn A" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3">
+                <label asp-for="DateOfBirth" class="form-label">Ngày sinh</label>
+                <input asp-for="DateOfBirth" type="date" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3">
+                <label asp-for="Gender" class="form-label">Giới tính</label>
+                <select asp-for="Gender" class="form-select" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="IdentityNumber" class="form-label">CCCD/CMND</label>
+                <input asp-for="IdentityNumber" class="form-control" placeholder="VD: 0123456789" />
+                <span asp-validation-for="IdentityNumber" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="Phone" class="form-label">Số điện thoại</label>
+                <input asp-for="Phone" class="form-control" placeholder="VD: 0900000000" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="InsuranceCode" class="form-label">Mã BHYT</label>
+                <input asp-for="InsuranceCode" class="form-control" placeholder="(Không bắt buộc)" />
+                <span asp-validation-for="InsuranceCode" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Address" class="form-label">Địa chỉ</label>
+                <input asp-for="Address" class="form-control" placeholder="VD: TP.HCM" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="col-12 d-flex gap-2 mt-2">
+                <button class="btn btn-primary" type="submit">Tiếp nhận</button>
+                <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

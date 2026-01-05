@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\.NetProject\\HospitalTriageSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|e:\\.netproject\\hospitaltriagesystem\\tests\\hospitaltriage.tests\\services\\departmentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|solutionrelative:tests\\hospitaltriage.tests\\services\\departmentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{087C6500-766A-4431-8611-86C2389073E9}|src\\HospitalTriage.Web\\HospitalTriage.Web.csproj|e:\\.netproject\\hospitaltriagesystem\\src\\hospitaltriage.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{087C6500-766A-4431-8611-86C2389073E9}|src\\HospitalTriage.Web\\HospitalTriage.Web.csproj|solutionrelative:src\\hospitaltriage.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D5E35B-42BF-42CE-9488-2D91A84EF74E}|src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj|e:\\.netproject\\hospitaltriagesystem\\src\\hospitaltriage.domain\\hospitaltriage.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40D5E35B-42BF-42CE-9488-2D91A84EF74E}|src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj|solutionrelative:src\\hospitaltriage.domain\\hospitaltriage.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|e:\\.netproject\\hospitaltriagesystem\\tests\\hospitaltriage.tests\\services\\patientservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|solutionrelative:tests\\hospitaltriage.tests\\services\\patientservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|e:\\.netproject\\hospitaltriagesystem\\tests\\hospitaltriage.tests\\services\\visitserviceworkflowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33F4025-9A96-444C-8361-E89836980052}|tests\\HospitalTriage.Tests\\HospitalTriage.Tests.csproj|solutionrelative:tests\\hospitaltriage.tests\\services\\visitserviceworkflowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\.NetProject\\HospitalTriageSystem\\src\\HospitalTriage.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\HospitalTriage.Web\\appsettings.json",
+              "ToolTip": "E:\\.NetProject\\HospitalTriageSystem\\src\\HospitalTriage.Web\\appsettings.json",
+              "RelativeToolTip": "src\\HospitalTriage.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-04T13:03:06.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HospitalTriage.Domain.csproj",
+              "DocumentMoniker": "E:\\.NetProject\\HospitalTriageSystem\\src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj",
+              "ToolTip": "E:\\.NetProject\\HospitalTriageSystem\\src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj",
+              "RelativeToolTip": "src\\HospitalTriage.Domain\\HospitalTriage.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-04T07:59:43.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentServiceTests.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\DepartmentServiceTests.cs",
+              "RelativeDocumentMoniker": "tests\\HospitalTriage.Tests\\Services\\DepartmentServiceTests.cs",
+              "ToolTip": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\DepartmentServiceTests.cs",
+              "RelativeToolTip": "tests\\HospitalTriage.Tests\\Services\\DepartmentServiceTests.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwKgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T02:04:45.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientServiceTests.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\PatientServiceTests.cs",
+              "RelativeDocumentMoniker": "tests\\HospitalTriage.Tests\\Services\\PatientServiceTests.cs",
+              "ToolTip": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\PatientServiceTests.cs",
+              "RelativeToolTip": "tests\\HospitalTriage.Tests\\Services\\PatientServiceTests.cs",
+              "ViewState": "AgIAAOsBAAAAAAAAAAAqwPwBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T02:06:20.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VisitServiceWorkflowTests.cs",
+              "DocumentMoniker": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\VisitServiceWorkflowTests.cs",
+              "RelativeDocumentMoniker": "tests\\HospitalTriage.Tests\\Services\\VisitServiceWorkflowTests.cs",
+              "ToolTip": "E:\\.NetProject\\HospitalTriageSystem\\tests\\HospitalTriage.Tests\\Services\\VisitServiceWorkflowTests.cs",
+              "RelativeToolTip": "tests\\HospitalTriage.Tests\\Services\\VisitServiceWorkflowTests.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAE0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T02:07:07.735Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

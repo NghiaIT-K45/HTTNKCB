@@ -1,0 +1,200 @@
+@{
+    ViewData["Title"] = "Trang chủ";
+    var isAuth = User?.Identity?.IsAuthenticated == true;
+
+    var isAdmin = isAuth && User.IsInRole("Admin");
+    var isManager = isAuth && User.IsInRole("Manager");
+    var isReceptionist = isAuth && User.IsInRole("Receptionist");
+    var isNurse = isAuth && User.IsInRole("Nurse");
+    var isDoctor = isAuth && User.IsInRole("Doctor");
+
+    var canDashboard = isAdmin || isManager || isNurse || isDoctor;
+    var canIntake = isAdmin || isManager || isReceptionist;
+    var canTriage = isAdmin || isNurse || isDoctor;
+    var canReports = isAdmin || isManager;
+
+    string roleLabel =
+        isAdmin ? "Admin" :
+        isManager ? "Manager" :
+        isDoctor ? "Doctor" :
+        isNurse ? "Nurse" :
+        isReceptionist ? "Receptionist" :
+        "User";
+}
+
+<div class="p-4 p-md-5 bg-white border rounded-4 shadow-sm">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+            <h1 class="display-6 fw-semibold mb-2">
+                Hệ thống Tiếp nhận &amp; Phân luồng Khám chữa bệnh
+            </h1>
+            <p class="text-muted mb-4">
+                Quản lý luồng bệnh nhân từ tiếp nhận → phân luồng → khám → hoàn tất, theo dõi hàng đợi và thống kê theo trạng thái.
+            </p>
+
+            @if (!isAuth)
+            {
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+                    <span class="text-muted align-self-center">Vui lòng đăng nhập để sử dụng hệ thống.</span>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex flex-wrap gap-2">
+                    @if (canIntake)
+                    {
+                        <a class="btn btn-primary btn-lg" asp-controller="Intake" asp-action="Register">Bắt đầu tiếp nhận</a>
+                    }
+                    @if (canDashboard)
+                    {
+                        <a class="btn btn-outline-primary btn-lg" asp-controller="Dashboard" asp-action="Index">Mở Dashboard</a>
+                    }
+                </div>
+                <div class="mt-3 text-muted">
+                    Xin chào <strong>@User.Identity!.Name</strong> <span class="badge text-bg-dark ms-2">@roleLabel</span>
+                </div>
+            }
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bg-light border rounded-4 p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-muted small">Truy cập nhanh</div>
+                        <div class="fw-semibold">Chức năng</div>
+                    </div>
+                    <span class="badge text-bg-primary">HospitalTriage</span>
+                </div>
+
+                <hr class="my-3" />
+
+                @if (!isAuth)
+                {
+                    <div class="text-muted small">
+                        Đăng nhập để xem các chức năng theo quyền của bạn.
+                    </div>
+                }
+                else
+                {
+                    <div class="d-grid gap-2">
+                        @if (canIntake)
+                        {
+                            <a class="btn btn-outline-dark" asp-controller="Intake" asp-action="Register">Tiếp nhận bệnh nhân</a>
+                        }
+                        @if (canTriage)
+                        {
+                            <a class="btn btn-outline-dark" asp-controller="Triage" asp-action="Index">Phân luồng (Triage)</a>
+                        }
+                        @if (canDashboard)
+                        {
+                            <a class="btn btn-outline-dark" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                        }
+                        @if (canReports)
+                        {
+                            <a class="btn btn-outline-dark" asp-controller="Reports" asp-action="Index">Báo cáo</a>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (isAuth)
+{
+    <div class="row g-3 g-md-4 mt-3 mt-md-4">
+        @if (canIntake)
+        {
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 bg-primary-subtle text-primary d-inline-flex align-items-center justify-content-center"
+                                 style="width:44px;height:44px;">
+                                <span class="fw-bold">1</span>
+                            </div>
+                            <div>
+                                <h5 class="card-title mb-1">Tiếp nhận bệnh nhân</h5>
+                                <p class="text-muted mb-3">
+                                    Tạo bệnh nhân (nếu chưa có), tạo lượt khám và sinh số thứ tự theo ngày.
+                                </p>
+                                <a class="btn btn-primary" asp-controller="Intake" asp-action="Register">Vào Tiếp nhận</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @if (canTriage)
+        {
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 bg-warning-subtle text-warning d-inline-flex align-items-center justify-content-center"
+                                 style="width:44px;height:44px;">
+                                <span class="fw-bold">2</span>
+                            </div>
+                            <div>
+                                <h5 class="card-title mb-1">Phân luồng (Triage)</h5>
+                                <p class="text-muted mb-3">
+                                    Nhập triệu chứng ban đầu, hệ thống gợi ý khoa theo luật từ khoá.
+                                </p>
+                                <a class="btn btn-outline-primary" asp-controller="Triage" asp-action="Index">Vào Triage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @if (canDashboard || canReports)
+        {
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 bg-success-subtle text-success d-inline-flex align-items-center justify-content-center"
+                                 style="width:44px;height:44px;">
+                                <span class="fw-bold">3</span>
+                            </div>
+                            <div>
+                                <h5 class="card-title mb-1">Dashboard &amp; Báo cáo</h5>
+                                <p class="text-muted mb-3">
+                                    Theo dõi hàng đợi, thống kê theo trạng thái và xem báo cáo theo ngày.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    @if (canDashboard)
+                                    {
+                                        <a class="btn btn-outline-primary" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                                    }
+                                    @if (canReports)
+                                    {
+                                        <a class="btn btn-outline-secondary" asp-controller="Reports" asp-action="Index">Báo cáo</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="mt-4">
+        <div class="alert alert-light border rounded-4 shadow-sm mb-0">
+            <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
+                <div>
+                    <div class="fw-semibold">Gợi ý quy trình</div>
+                    <div class="text-muted">Tiếp nhận → Triage → Bắt đầu khám → Hoàn tất</div>
+                </div>
+                @if (canDashboard)
+                {
+                    <a class="btn btn-sm btn-outline-dark" asp-controller="Dashboard" asp-action="Index">Xem hàng đợi</a>
+                }
+            </div>
+        </div>
+    </div>
+}

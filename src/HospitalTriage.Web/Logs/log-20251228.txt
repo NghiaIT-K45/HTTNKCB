@@ -1,0 +1,186 @@
+2025-12-28 06:10:20.085 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:10:20.138 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:10:20.203 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:10:20.205 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:10:20.206 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:10:20.706 +07:00 [INF] HTTP GET / responded 200 in 191.0460 ms
+2025-12-28 06:10:20.711 +07:00 [INF] HTTP GET /css/site.css responded 304 in 5.2486 ms
+2025-12-28 06:10:20.808 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 5.3567 ms
+2025-12-28 06:10:27.606 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 177.7133 ms
+2025-12-28 06:10:29.746 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 251.2837 ms
+2025-12-28 06:10:29.764 +07:00 [INF] HTTP GET / responded 200 in 10.7653 ms
+2025-12-28 06:10:32.532 +07:00 [INF] HTTP GET /Triage responded 200 in 204.5105 ms
+2025-12-28 06:10:37.396 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 12.6905 ms
+2025-12-28 06:10:37.416 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 8.7578 ms
+2025-12-28 06:10:40.293 +07:00 [INF] HTTP GET / responded 200 in 2.7657 ms
+2025-12-28 06:10:42.088 +07:00 [INF] HTTP GET /Intake/Register responded 302 in 2.6584 ms
+2025-12-28 06:10:42.108 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 10.8866 ms
+2025-12-28 06:10:45.476 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 91.9027 ms
+2025-12-28 06:10:45.532 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 49.2641 ms
+2025-12-28 06:10:47.302 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 5.4163 ms
+2025-12-28 06:10:47.311 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 1.4994 ms
+2025-12-28 06:10:48.669 +07:00 [INF] HTTP GET / responded 200 in 2.9523 ms
+2025-12-28 06:10:50.994 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 4.3662 ms
+2025-12-28 06:10:56.278 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 84.4265 ms
+2025-12-28 06:10:56.287 +07:00 [INF] HTTP GET / responded 200 in 2.9628 ms
+2025-12-28 06:10:58.104 +07:00 [INF] HTTP GET /Departments responded 200 in 38.7768 ms
+2025-12-28 06:10:59.830 +07:00 [INF] HTTP GET /Doctors responded 200 in 45.2555 ms
+2025-12-28 06:11:00.997 +07:00 [INF] HTTP GET /Reports responded 200 in 31.2047 ms
+2025-12-28 06:11:01.635 +07:00 [INF] HTTP GET /Triage responded 200 in 11.4226 ms
+2025-12-28 06:11:02.227 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 5.5007 ms
+2025-12-28 06:11:02.848 +07:00 [INF] HTTP GET /Dashboard responded 200 in 34.8783 ms
+2025-12-28 06:11:13.567 +07:00 [INF] HTTP GET /Doctors responded 200 in 10.4588 ms
+2025-12-28 06:11:15.307 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 2.0545 ms
+2025-12-28 06:11:15.315 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 2.0486 ms
+2025-12-28 06:11:17.214 +07:00 [INF] HTTP GET / responded 200 in 3.0468 ms
+2025-12-28 06:11:25.416 +07:00 [INF] HTTP GET / responded 200 in 2.1340 ms
+2025-12-28 06:11:27.317 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 4.1793 ms
+2025-12-28 06:11:36.184 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 9.9891 ms
+2025-12-28 06:16:20.544 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:16:20.594 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:16:20.653 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:16:20.657 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:16:20.659 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:16:21.040 +07:00 [INF] HTTP GET / responded 200 in 145.6629 ms
+2025-12-28 06:16:25.448 +07:00 [INF] HTTP GET / responded 200 in 7.2897 ms
+2025-12-28 06:16:32.474 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 123.0188 ms
+2025-12-28 06:16:42.122 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 79.2986 ms
+2025-12-28 06:19:33.245 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:19:33.281 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:19:33.329 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:19:33.330 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:19:33.331 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:19:33.913 +07:00 [INF] HTTP GET / responded 200 in 141.7522 ms
+2025-12-28 06:19:43.983 +07:00 [INF] HTTP GET / responded 200 in 7.5244 ms
+2025-12-28 06:19:47.766 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 112.5746 ms
+2025-12-28 06:19:55.374 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 64.0986 ms
+2025-12-28 06:21:09.081 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:21:09.120 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:21:09.169 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:21:09.171 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:21:09.172 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:21:09.938 +07:00 [INF] HTTP GET / responded 200 in 148.9275 ms
+2025-12-28 06:21:17.263 +07:00 [INF] HTTP GET / responded 200 in 9.7315 ms
+2025-12-28 06:21:19.110 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 128.1718 ms
+2025-12-28 06:21:27.475 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 85.4408 ms
+2025-12-28 06:25:17.695 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:25:17.741 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:25:17.808 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:25:17.810 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:25:17.811 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:25:18.311 +07:00 [INF] HTTP GET / responded 200 in 165.7466 ms
+2025-12-28 06:25:36.327 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 152.4877 ms
+2025-12-28 06:25:50.021 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 76.7882 ms
+2025-12-28 06:26:00.306 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 69.1114 ms
+2025-12-28 06:26:01.387 +07:00 [INF] HTTP GET /Identity/Account/ForgotPassword responded 200 in 15.7035 ms
+2025-12-28 06:28:03.966 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:28:04.013 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:28:04.077 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:28:04.079 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:28:04.081 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:28:04.465 +07:00 [INF] HTTP GET / responded 200 in 143.9503 ms
+2025-12-28 06:28:06.145 +07:00 [INF] HTTP GET /Intake/Register responded 302 in 7.0523 ms
+2025-12-28 06:28:06.288 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 133.9411 ms
+2025-12-28 06:28:26.826 +07:00 [INF] HTTP POST /Identity/Account/Login responded 200 in 78.0516 ms
+2025-12-28 06:30:22.663 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 230.8188 ms
+2025-12-28 06:30:22.731 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 60.3336 ms
+2025-12-28 06:30:24.852 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 10.9447 ms
+2025-12-28 06:30:24.871 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 8.4552 ms
+2025-12-28 06:30:26.541 +07:00 [INF] HTTP GET / responded 200 in 6.0514 ms
+2025-12-28 06:30:27.933 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 7.4199 ms
+2025-12-28 06:30:29.929 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 90.3412 ms
+2025-12-28 06:30:29.939 +07:00 [INF] HTTP GET / responded 200 in 4.2468 ms
+2025-12-28 06:30:34.016 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 3.3452 ms
+2025-12-28 06:30:34.025 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 1.7440 ms
+2025-12-28 06:30:35.937 +07:00 [INF] HTTP GET / responded 200 in 2.4916 ms
+2025-12-28 06:30:37.028 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 5.2466 ms
+2025-12-28 06:30:38.934 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 98.8381 ms
+2025-12-28 06:30:38.942 +07:00 [INF] HTTP GET / responded 200 in 2.7155 ms
+2025-12-28 06:30:41.254 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 1.4560 ms
+2025-12-28 06:30:41.266 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 2.3905 ms
+2025-12-28 06:30:42.602 +07:00 [INF] HTTP GET / responded 200 in 3.4532 ms
+2025-12-28 06:30:43.354 +07:00 [INF] HTTP GET /Intake/Register responded 302 in 1.4285 ms
+2025-12-28 06:30:43.368 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 3.8368 ms
+2025-12-28 06:30:45.712 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 85.8118 ms
+2025-12-28 06:30:45.725 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 7.0383 ms
+2025-12-28 06:30:46.828 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 9.9024 ms
+2025-12-28 06:36:40.718 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:36:40.757 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:36:40.811 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:36:40.813 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:36:40.815 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:36:41.199 +07:00 [INF] HTTP GET / responded 200 in 149.5815 ms
+2025-12-28 06:36:52.161 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 48.5034 ms
+2025-12-28 06:36:52.214 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 44.0118 ms
+2025-12-28 06:36:53.321 +07:00 [INF] HTTP GET / responded 200 in 4.7870 ms
+2025-12-28 06:36:54.778 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 78.7230 ms
+2025-12-28 06:37:02.128 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 183.1862 ms
+2025-12-28 06:37:02.140 +07:00 [INF] HTTP GET / responded 200 in 5.4840 ms
+2025-12-28 06:37:06.595 +07:00 [INF] HTTP GET /Triage responded 200 in 183.8100 ms
+2025-12-28 06:37:08.158 +07:00 [INF] HTTP GET /Triage responded 200 in 16.3030 ms
+2025-12-28 06:37:09.040 +07:00 [INF] HTTP GET /Dashboard responded 200 in 25.5691 ms
+2025-12-28 06:37:19.356 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 4.5035 ms
+2025-12-28 06:37:19.364 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 1.5489 ms
+2025-12-28 06:37:20.495 +07:00 [INF] HTTP GET / responded 200 in 3.4875 ms
+2025-12-28 06:37:24.601 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 5.7135 ms
+2025-12-28 06:37:25.892 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 87.3044 ms
+2025-12-28 06:37:25.900 +07:00 [INF] HTTP GET / responded 200 in 2.6996 ms
+2025-12-28 06:37:27.113 +07:00 [INF] HTTP GET /Triage responded 200 in 13.6566 ms
+2025-12-28 06:37:29.766 +07:00 [INF] HTTP GET /Dashboard responded 200 in 6.6034 ms
+2025-12-28 06:42:14.507 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:42:14.552 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:42:14.604 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:42:14.606 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:42:14.607 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:42:15.522 +07:00 [INF] HTTP GET / responded 200 in 169.1197 ms
+2025-12-28 06:42:17.943 +07:00 [INF] HTTP GET /Dashboard responded 200 in 218.6714 ms
+2025-12-28 06:42:22.957 +07:00 [INF] HTTP GET /Dashboard responded 200 in 94.7165 ms
+2025-12-28 06:42:25.504 +07:00 [INF] HTTP GET /Triage responded 200 in 80.6283 ms
+2025-12-28 06:42:26.297 +07:00 [INF] HTTP GET /Dashboard responded 200 in 22.8255 ms
+2025-12-28 06:49:20.943 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:49:20.978 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:49:21.021 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:49:21.022 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:49:21.023 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem_fixed6\src\HospitalTriage.Web
+2025-12-28 06:49:21.490 +07:00 [INF] HTTP GET / responded 200 in 168.4771 ms
+2025-12-28 06:49:23.950 +07:00 [INF] HTTP GET /Dashboard responded 200 in 195.2481 ms
+2025-12-28 06:49:26.261 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 43.4726 ms
+2025-12-28 06:49:26.301 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 32.8312 ms
+2025-12-28 06:49:27.818 +07:00 [INF] HTTP GET / responded 200 in 6.6191 ms
+2025-12-28 06:49:29.187 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 48.5275 ms
+2025-12-28 06:49:31.012 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 211.4675 ms
+2025-12-28 06:49:31.022 +07:00 [INF] HTTP GET / responded 200 in 3.0253 ms
+2025-12-28 06:49:31.851 +07:00 [INF] HTTP GET /Triage responded 200 in 72.8610 ms
+2025-12-28 06:49:32.241 +07:00 [INF] HTTP GET /Dashboard responded 200 in 12.1919 ms
+2025-12-28 06:50:02.037 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 3.6771 ms
+2025-12-28 06:50:02.045 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 1.4328 ms
+2025-12-28 06:50:03.849 +07:00 [INF] HTTP GET / responded 200 in 3.5998 ms
+2025-12-28 06:50:05.175 +07:00 [INF] HTTP GET /Intake/Register responded 302 in 5.2903 ms
+2025-12-28 06:50:05.191 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 8.5021 ms
+2025-12-28 06:50:07.636 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 85.5520 ms
+2025-12-28 06:50:07.688 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 43.6332 ms
+2025-12-28 06:50:09.059 +07:00 [INF] HTTP GET /Dashboard responded 200 in 45.7586 ms
+2025-12-28 06:50:10.893 +07:00 [INF] HTTP GET /Dashboard responded 200 in 22.1602 ms
+2025-12-28 06:50:12.254 +07:00 [INF] HTTP GET /Dashboard responded 200 in 15.0077 ms
+2025-12-28 06:50:13.832 +07:00 [INF] HTTP GET /Dashboard responded 200 in 14.7190 ms
+2025-12-28 06:50:15.319 +07:00 [INF] HTTP GET /Dashboard responded 200 in 22.0758 ms
+2025-12-28 06:50:19.514 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 1.5703 ms
+2025-12-28 06:50:19.522 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 2.5399 ms
+2025-12-28 06:52:31.079 +07:00 [INF] Now listening on: https://localhost:64274
+2025-12-28 06:52:31.119 +07:00 [INF] Now listening on: http://localhost:64275
+2025-12-28 06:52:31.172 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 06:52:31.174 +07:00 [INF] Hosting environment: Development
+2025-12-28 06:52:31.175 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem\src\HospitalTriage.Web
+2025-12-28 06:52:32.227 +07:00 [INF] HTTP GET / responded 200 in 152.9444 ms
+2025-12-28 06:52:32.328 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 6.0630 ms
+2025-12-28 06:52:39.112 +07:00 [INF] HTTP GET /Dashboard responded 302 in 17.5545 ms
+2025-12-28 06:52:39.243 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 120.5105 ms
+2025-12-28 06:52:40.988 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 236.4288 ms
+2025-12-28 06:52:41.254 +07:00 [INF] HTTP GET /Dashboard responded 200 in 258.3078 ms
+2025-12-28 06:52:46.319 +07:00 [INF] HTTP GET /Intake/Register responded 200 in 48.9635 ms
+2025-12-28 06:52:47.307 +07:00 [INF] HTTP GET /Triage responded 200 in 20.4003 ms
+2025-12-28 06:52:49.051 +07:00 [INF] HTTP GET /Reports responded 200 in 31.8569 ms
+2025-12-28 06:52:50.310 +07:00 [INF] HTTP GET /Departments responded 200 in 22.0455 ms
+2025-12-28 06:52:51.593 +07:00 [INF] HTTP GET /Doctors responded 200 in 34.2488 ms
+2025-12-28 06:52:57.199 +07:00 [INF] HTTP POST /Identity/Account/Logout responded 302 in 10.5626 ms
+2025-12-28 06:52:57.212 +07:00 [INF] HTTP GET /Identity/Account/Logout responded 200 in 5.5763 ms

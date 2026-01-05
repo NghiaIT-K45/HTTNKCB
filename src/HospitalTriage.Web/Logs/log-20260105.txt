@@ -1,0 +1,11 @@
+2026-01-05 18:36:40.096 +07:00 [INF] Now listening on: https://localhost:64274
+2026-01-05 18:36:40.127 +07:00 [INF] Now listening on: http://localhost:64275
+2026-01-05 18:36:40.169 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-05 18:36:40.170 +07:00 [INF] Hosting environment: Development
+2026-01-05 18:36:40.171 +07:00 [INF] Content root path: E:\.NetProject\HospitalTriageSystem\src\HospitalTriage.Web
+2026-01-05 18:36:41.715 +07:00 [INF] HTTP GET / responded 200 in 229.3928 ms
+2026-01-05 18:36:41.878 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 6.4197 ms
+2026-01-05 18:37:15.947 +07:00 [INF] HTTP GET / responded 200 in 10.0459 ms
+2026-01-05 18:37:19.272 +07:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 152.7958 ms
+2026-01-05 18:37:20.675 +07:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 242.2094 ms
+2026-01-05 18:37:20.699 +07:00 [INF] HTTP GET / responded 200 in 17.6094 ms

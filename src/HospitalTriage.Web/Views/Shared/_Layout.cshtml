@@ -1,0 +1,225 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HospitalTriage</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        body {
+            background: #f6f7fb;
+        }
+
+        .app-shell {
+            max-width: 1200px;
+        }
+
+        .app-navbar {
+            box-shadow: 0 6px 18px rgba(16,24,40,.06);
+        }
+
+        .nav-link.active {
+            font-weight: 600;
+        }
+
+        .app-card {
+            border: 0;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(16,24,40,.06);
+        }
+
+        .toast-like {
+            border-radius: 12px;
+        }
+
+        .app-footer {
+            font-size: .925rem;
+        }
+
+        .brand-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2f6fed;
+            display: inline-block;
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.18);
+            font-weight: 700;
+        }
+
+        .dropdown-menu {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    @{
+        var isAuth = User?.Identity?.IsAuthenticated == true;
+
+        var isAdmin = isAuth && User.IsInRole("Admin");
+        var isManager = isAuth && User.IsInRole("Manager");
+        var isReceptionist = isAuth && User.IsInRole("Receptionist");
+        var isNurse = isAuth && User.IsInRole("Nurse");
+        var isDoctor = isAuth && User.IsInRole("Doctor");
+
+        var canDashboard = isAdmin || isManager || isNurse || isDoctor;
+        var canIntake = isAdmin || isManager || isReceptionist;
+        var canTriage = isAdmin || isNurse || isDoctor;
+        var canReports = isAdmin || isManager;
+        var canCatalog = isAdmin || isManager;
+
+        var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+        string Active(string controller) => string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+
+        var displayName = User?.Identity?.Name ?? "";
+        var avatarText = string.IsNullOrWhiteSpace(displayName) ? "U" : displayName.Trim()[0].ToString().ToUpperInvariant();
+
+        var roleLabel =
+        isAdmin ? "Admin" :
+        isManager ? "Manager" :
+        isDoctor ? "Doctor" :
+        isNurse ? "Nurse" :
+        isReceptionist ? "Receptionist" : "";
+    }
+
+    <header class="app-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container app-shell">
+                <a class="navbar-brand d-flex align-items-center gap-2" asp-controller="Home" asp-action="Index">
+                    <span class="brand-dot"></span>
+                    <span class="fw-semibold">HospitalTriage</span>
+                </a>
+
+                @* Chưa đăng nhập: chỉ hiện nút Đăng nhập *@
+                @if (!isAuth)
+                {
+                    <div class="ms-auto">
+                        <a class="btn btn-outline-light btn-sm" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+                    </div>
+                }
+                else
+                {
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto gap-lg-1">
+                            @if (canDashboard)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @Active("Dashboard")" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                                </li>
+                            }
+                            @if (canIntake)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @Active("Intake")" asp-controller="Intake" asp-action="Register">Tiếp nhận</a>
+                                </li>
+                            }
+                            @if (canTriage)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @Active("Triage")" asp-controller="Triage" asp-action="Index">Phân luồng</a>
+                                </li>
+                            }
+                            @if (canReports)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @Active("Reports")" asp-controller="Reports" asp-action="Index">Báo cáo</a>
+                                </li>
+                            }
+                            @if (canCatalog)
+                            {
+                                var catalogActive = Active("Departments") == "active" || Active("Doctors") == "active" ? "active" : "";
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle @catalogActive" href="#" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Danh mục
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" asp-controller="Departments" asp-action="Index">Khoa khám</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Doctors" asp-action="Index">Bác sĩ</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+                            <li class="nav-item d-none d-lg-block">
+                                <span class="text-white-50 small">@roleLabel</span>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="avatar text-white">@avatarText</span>
+                                    <span class="text-white">@displayName</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                    <li>
+                                        <span class="dropdown-item-text text-white-50 small">Đăng nhập: @displayName</span>
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li class="px-2">
+                                        <form asp-area="Identity"
+                                              asp-page="/Account/Logout"
+                                              asp-route-returnUrl="/"
+                                              method="post">
+                                            <button type="submit" class="btn btn-outline-light btn-sm w-100">Đăng xuất</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                }
+            </div>
+        </nav>
+    </header>
+
+    <div class="container app-shell my-4">
+        @if (TempData["Success"] is string okMsg)
+        {
+            <div class="alert alert-success toast-like border-0 shadow-sm">@okMsg</div>
+        }
+        @if (TempData["Error"] is string errMsg)
+        {
+            <div class="alert alert-danger toast-like border-0 shadow-sm">@errMsg</div>
+        }
+
+        <div class="app-card bg-white p-3 p-md-4">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer class="app-footer text-muted py-3">
+        <div class="container app-shell d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <div>&copy; @DateTime.Now.Year - HospitalTriage</div>
+            <div class="small">All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

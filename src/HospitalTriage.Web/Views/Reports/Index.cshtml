@@ -1,0 +1,93 @@
+@model HospitalTriage.Web.ViewModels.Reports.ReportIndexVm
+@{
+    ViewData["Title"] = "Báo cáo";
+}
+
+<h2>Báo cáo</h2>
+
+<form asp-action="Index" method="post" class="mt-3">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <label asp-for="Filter.FromDate" class="form-label">Từ ngày</label>
+            <input asp-for="Filter.FromDate" type="date" class="form-control" />
+            <span asp-validation-for="Filter.FromDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <label asp-for="Filter.ToDate" class="form-label">Đến ngày</label>
+            <input asp-for="Filter.ToDate" type="date" class="form-control" />
+            <span asp-validation-for="Filter.ToDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label asp-for="Filter.DepartmentId" class="form-label">Khoa</label>
+            <select asp-for="Filter.DepartmentId" class="form-select" asp-items="Model.Filter.Departments">
+                <option value="">-- Tất cả khoa --</option>
+            </select>
+        </div>
+
+        <div class="col-md-2 mb-3 d-flex align-items-end">
+            <button class="btn btn-primary w-100" type="submit">Chạy báo cáo</button>
+        </div>
+    </div>
+</form>
+
+@if (Model.Result is not null)
+{
+    <hr />
+    <h4>Kết quả</h4>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="text-muted">Thời gian chờ trung bình (phút)</div>
+                    <div class="display-6">@Model.Result.AverageWaitingMinutes.ToString("0.##")</div>
+                    <div class="text-muted">Sample: @Model.Result.SampleCount</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="text-muted">Tổng lượt khám</div>
+                    <div class="display-6">@Model.Result.VisitsPerDay.Sum(x => x.Count)</div>
+                    <div class="text-muted">Số ngày có dữ liệu: @Model.Result.VisitsPerDay.Count</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center">
+        <h5>Lượt khám theo ngày</h5>
+        <a class="btn btn-outline-secondary"
+           asp-action="ExportCsv"
+           asp-route-fromDate="@Model.Filter.FromDate"
+           asp-route-toDate="@Model.Filter.ToDate"
+           asp-route-departmentId="@Model.Filter.DepartmentId">
+            Export CSV
+        </a>
+    </div>
+
+    <table class="table table-striped table-bordered mt-2">
+        <thead>
+            <tr>
+                <th style="width:160px;">Date</th>
+                <th style="width:120px;">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Result.VisitsPerDay)
+            {
+                <tr>
+                    <td>@item.Date.ToString("yyyy-MM-dd")</td>
+                    <td>@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

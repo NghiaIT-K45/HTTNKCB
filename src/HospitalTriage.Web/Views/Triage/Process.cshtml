@@ -1,0 +1,82 @@
+@model HospitalTriage.Web.ViewModels.Triage.TriageVm
+@{
+    ViewData["Title"] = "Phân luồng";
+}
+
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
+    <div>
+        <h2 class="mb-1">Phân luồng</h2>
+        <div class="text-muted small">Nhập triệu chứng, chọn khoa/bác sĩ (nếu cần) rồi xác nhận</div>
+    </div>
+    <a class="btn btn-outline-secondary" asp-controller="Triage" asp-action="Index">Quay lại</a>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4 mb-3">
+    <div class="card-body p-4">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="text-muted small">Bệnh nhân</div>
+                <div class="fw-semibold">@Model.PatientName</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="text-muted small">Ngày khám</div>
+                <div class="fw-semibold">@Model.VisitDate.ToString("yyyy-MM-dd")</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="text-muted small">Số thứ tự</div>
+                <div class="fw-semibold">
+                    <span class="badge text-bg-primary rounded-pill px-3 py-2">@Model.QueueNumber</span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="text-muted small">VisitId</div>
+                <div class="fw-semibold">#@Model.VisitId</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-body p-4">
+        <form asp-action="Process" method="post" class="row g-3">
+            @Html.AntiForgeryToken()
+            <input type="hidden" asp-for="VisitId" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="col-12">
+                <label asp-for="Symptoms" class="form-label">Triệu chứng ban đầu</label>
+                <textarea asp-for="Symptoms" rows="3" class="form-control" placeholder="VD: Sốt cao, ho nhiều..."></textarea>
+                <span asp-validation-for="Symptoms" class="text-danger"></span>
+                <div class="form-text">
+                    Hệ thống sẽ gợi ý khoa theo keyword rule. Không match → khoa Tổng quát.
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label asp-for="DepartmentId" class="form-label">Khoa khám (tùy chọn)</label>
+                <select asp-for="DepartmentId" class="form-select" asp-items="Model.Departments">
+                    <option value="">-- Tự động (Rule/Tổng quát) --</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label asp-for="DoctorId" class="form-label">Bác sĩ (tùy chọn)</label>
+                <select asp-for="DoctorId" class="form-select" asp-items="Model.Doctors">
+                    <option value="">-- Không chọn --</option>
+                </select>
+            </div>
+
+            <div class="col-12 d-flex gap-2 mt-2">
+                <button class="btn btn-primary" type="submit">Xác nhận phân luồng</button>
+                <a class="btn btn-outline-secondary" asp-controller="Dashboard" asp-action="Index">Về Dashboard</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HospitalTriage.Application/1.0.0": {
+        "dependencies": {
+          "HospitalTriage.Domain": "1.0.0"
+        },
+        "runtime": {
+          "HospitalTriage.Application.dll": {}
+        }
+      },
+      "HospitalTriage.Domain/1.0.0": {
+        "runtime": {
+          "HospitalTriage.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HospitalTriage.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HospitalTriage.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

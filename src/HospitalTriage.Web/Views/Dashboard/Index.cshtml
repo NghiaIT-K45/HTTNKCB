@@ -1,0 +1,177 @@
+@model HospitalTriage.Web.ViewModels.Dashboard.DashboardVm
+@using HospitalTriage.Domain.Enums
+@{
+    ViewData["Title"] = "Dashboard";
+
+    string StatusBadge(VisitStatus s) => s switch
+    {
+        VisitStatus.WaitingTriage => "secondary",
+        VisitStatus.WaitingDoctor => "warning",
+        VisitStatus.InExamination => "info",
+        VisitStatus.Done => "success",
+        _ => "dark"
+    };
+
+    string StatusLabel(VisitStatus s) => s switch
+    {
+        VisitStatus.WaitingTriage => "Chờ phân luồng",
+        VisitStatus.WaitingDoctor => "Chờ bác sĩ",
+        VisitStatus.InExamination => "Đang khám",
+        VisitStatus.Done => "Hoàn tất",
+        _ => s.ToString()
+    };
+}
+
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
+    <div>
+        <h2 class="mb-1">Dashboard</h2>
+        <div class="text-muted small">Theo dõi số lượng theo trạng thái và danh sách chờ theo thứ tự</div>
+    </div>
+
+    @if (Model.DepartmentId.HasValue)
+    {
+        <div class="d-flex align-items-center gap-2">
+            <span class="badge text-bg-light border">
+                Đang lọc: <strong class="ms-1">@((Model.DepartmentName ?? Model.DepartmentId.ToString())!)</strong>
+            </span>
+            <a class="btn btn-sm btn-outline-secondary" asp-controller="Dashboard" asp-action="Index">Bỏ lọc</a>
+        </div>
+    }
+</div>
+
+@if (TempData["Error"] is string e)
+{
+    <div class="alert alert-danger border-0 shadow-sm rounded-4">@e</div>
+}
+@if (TempData["Success"] is string s)
+{
+    <div class="alert alert-success border-0 shadow-sm rounded-4">@s</div>
+}
+
+@if (Model.CanSelectDepartment)
+{
+    <div class="card border-0 shadow-sm rounded-4 mb-3">
+        <div class="card-body">
+            <form method="get" class="row g-2 align-items-end">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <label class="form-label mb-1">Khoa</label>
+                    <select class="form-select" name="departmentId" asp-items="Model.Departments">
+                        <option value="">-- Tất cả khoa --</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <button class="btn btn-primary">Lọc</button>
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+<div class="row g-3">
+    @foreach (var c in Model.StatusCounts)
+    {
+        <div class="col-6 col-lg-3">
+            <div class="card border-0 shadow-sm rounded-4 h-100">
+                <div class="card-body">
+                    <div class="text-muted small mb-1">@StatusLabel(c.Status)</div>
+                    <div class="d-flex align-items-end justify-content-between">
+                        <div class="display-6 mb-0">@c.Count</div>
+                        <span class="badge bg-@StatusBadge(c.Status)">@c.Status</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="d-flex align-items-center justify-content-between mt-4 mb-2">
+    <h4 class="mb-0">Danh sách đang chờ</h4>
+    <span class="text-muted small">
+        @(Model.WaitingList?.Count ?? 0) lượt
+    </span>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th style="width:90px;">Visit</th>
+                    <th style="width:120px;">Ngày</th>
+                    <th style="width:110px;">STT</th>
+                    <th>Bệnh nhân</th>
+                    <th style="width:160px;">Khoa</th>
+                    <th style="width:180px;">Bác sĩ</th>
+                    <th style="width:140px;">Trạng thái</th>
+                    <th style="width:190px;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.WaitingList is null || Model.WaitingList.Count == 0)
+                {
+                    <tr>
+                        <td colspan="8" class="text-center text-muted py-5">
+                            Không có dữ liệu.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model.WaitingList)
+                    {
+                        <tr>
+                            <td>
+                                <a class="text-decoration-none fw-semibold"
+                                   asp-controller="Visits" asp-action="Details" asp-route-id="@item.VisitId">
+                                    #@item.VisitId
+                                </a>
+                            </td>
+                            <td class="text-muted">@item.VisitDate.ToString("yyyy-MM-dd")</td>
+                            <td>
+                                <span class="badge text-bg-primary rounded-pill px-3 py-2">@item.QueueNumber</span>
+                            </td>
+                            <td class="fw-semibold">@item.PatientName</td>
+                            <td class="text-muted">@item.DepartmentName</td>
+                            <td class="text-muted">@item.DoctorName</td>
+                            <td>
+                                <span class="badge bg-@StatusBadge(item.Status)">@StatusLabel(item.Status)</span>
+                            </td>
+                            <td>
+                                @if (item.Status == VisitStatus.WaitingDoctor)
+                                {
+                                    <form method="post" asp-action="ChangeVisitStatus" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="visitId" value="@item.VisitId" />
+                                        <input type="hidden" name="newStatus" value="@VisitStatus.InExamination" />
+                                        <input type="hidden" name="departmentId" value="@Model.DepartmentId" />
+                                        <button type="submit" class="btn btn-sm btn-primary"
+                                                onclick="return confirm('Xác nhận bắt đầu khám?');">
+                                            Bắt đầu khám
+                                        </button>
+                                    </form>
+                                }
+                                else if (item.Status == VisitStatus.InExamination)
+                                {
+                                    <form method="post" asp-action="ChangeVisitStatus" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="visitId" value="@item.VisitId" />
+                                        <input type="hidden" name="newStatus" value="@VisitStatus.Done" />
+                                        <input type="hidden" name="departmentId" value="@Model.DepartmentId" />
+                                        <button type="submit" class="btn btn-sm btn-success"
+                                                onclick="return confirm('Xác nhận hoàn tất khám?');">
+                                            Hoàn tất
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">—</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

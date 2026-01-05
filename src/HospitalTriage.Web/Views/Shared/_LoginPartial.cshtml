@@ -1,0 +1,58 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    var isAuth = SignInManager.IsSignedIn(User);
+    var name = User?.Identity?.Name ?? "";
+    var avatar = string.IsNullOrWhiteSpace(name) ? "U" : name.Trim()[0].ToString().ToUpperInvariant();
+}
+
+<style>
+    .nav-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,.12);
+        border: 1px solid rgba(255,255,255,.18);
+        font-weight: 700;
+    }
+</style>
+
+<ul class="navbar-nav ms-auto align-items-center gap-2">
+    @if (isAuth)
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="nav-avatar text-white">@avatar</span>
+                <span class="text-white">@name</span>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                <li>
+                    <span class="dropdown-item-text text-white-50 small">Đăng nhập: @name</span>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="px-2">
+                    <form asp-area="Identity"
+                          asp-page="/Account/Logout"
+                          asp-route-returnUrl="/"
+                          method="post">
+                        <button type="submit" class="btn btn-outline-light btn-sm w-100">Đăng xuất</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="btn btn-outline-light btn-sm"
+               asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+        </li>
+    }
+</ul>
